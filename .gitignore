@@ -1,1 +1,16 @@
-node_modules
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+apps/*/dist/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+apps/*/.env.local
+
+# Tooling/cache
+.turbo/
+.vscode/

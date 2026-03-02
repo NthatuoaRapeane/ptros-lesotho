@@ -7,6 +7,8 @@
     "dev": "turbo run dev",
     "tunnel:carrier": "npx ngrok http 3001",
     "build": "turbo run build",
+    "build:hosting": "pnpm --filter @ptros/customer build && pnpm --filter @ptros/carrier build && pnpm --filter @ptros/coordinator build",
+    "deploy:hosting": "firebase deploy --only hosting",
     "lint": "turbo run lint"
   },
   "devDependencies": {
